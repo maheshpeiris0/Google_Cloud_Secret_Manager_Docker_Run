@@ -1,10 +1,14 @@
 # Google_Cloud_Secret_Manager_Docker_Run
 
+
+Creating a secret
 <br>
-gcloud secrets create my-secret-4 --replication-policy="automatic" --data-file=mahesh.txt
 
 echo -n "my super secret data" | gcloud secrets create my-secret-3 --replication-policy="automatic" --data-file=-
 
+gcloud secrets create my-secret-4 --replication-policy="automatic" --data-file=mahesh.txt  
+
+<br>
 gcloud secrets versions access latest --secret="my-secret"
 
 
