@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/project-name/Artifact Registry/my-webapp-yt', '.' ]
+images:
+- 'us-central1-docker.pkg.dev/project/Artifact Registry/my-webapp-yt'
+
+# please watch my CI/CD video for more details - in youtube description
+
